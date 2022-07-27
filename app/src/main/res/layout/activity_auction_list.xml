@@ -10,20 +10,27 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="50dp"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/logo"
-        android:backgroundTint="@color/black"
         app:cardCornerRadius="30dp"
+        android:background="#80000000"
+        android:backgroundTint="@color/black"
         >
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/btbsymbol"
-            />
-    </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/bangers"
+            android:paddingHorizontal="10dp"
+            android:text="BID That BRO"
+            android:textColor="#EDB208"
+            android:textSize="70sp" />
+
+    </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/auction_Title"
         android:layout_width="match_parent"
@@ -35,6 +42,10 @@
         android:layout_marginHorizontal="20dp"
         app:cardCornerRadius="30dp"
         android:padding="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btbsymbol" />
 
         <TextView
             android:id="@+id/tv_restAppBar"
@@ -43,7 +54,8 @@
             android:text="Auction List"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:paddingHorizontal="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
             android:paddingVertical="15dp"
             android:textStyle="bold"
             />
@@ -57,5 +69,17 @@
         android:layout_below="@id/auction_Title"
         android:background="@color/black"
         tools:listitem="@layout/layout_show_all_auction_products" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_createFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/background3"
+        android:src="@drawable/back"
+        app:fabSize="normal"
+        app:tint="@color/white" />
 
 </RelativeLayout>
