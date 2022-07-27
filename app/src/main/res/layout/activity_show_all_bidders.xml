@@ -3,32 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background2"
-    tools:context=".ShowAllBidders">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ShowAllBidders"
+    >
 
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/ll_appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background4"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="30dp"
         android:padding="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btbsymbol" />
 
         <TextView
             android:id="@+id/tv_restAppBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DataFlair Show Bidders"
+            android:text="All Bidders"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:paddingVertical="15dp"
+            android:textStyle="bold"
+            />
 
-    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_showAllOrders"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_appBar"
+        android:layout_marginHorizontal="10dp"
+
         tools:listitem="@layout/layout_show_all_bidders" />
 
 </RelativeLayout>

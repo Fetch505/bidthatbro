@@ -155,5 +155,12 @@ public class PlaceBidActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(PlaceBidActivity.this, MainActivity.class);
+        startActivity(intent);
+
+    }
 
 }

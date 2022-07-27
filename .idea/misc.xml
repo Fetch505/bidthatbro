@@ -5,12 +5,12 @@
       <map>
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_auction_list.xml" value="0.2" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_my_products.xml" value="0.16847826086956522" />
+        <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_my_products.xml" value="0.264" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_place_bid.xml" value="0.2" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_show_all_bidders.xml" value="0.1921875" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_show_all_bids.xml" value="0.1921875" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_user_register.xml" value="0.22291666666666668" />
-        <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_user_signin.xml" value="0.1" />
+        <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_user_signin.xml" value="0.2" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/activity_winner_list.xml" value="0.1921875" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/add_product.xml" value="0.1921875" />
         <entry key="..\:/AuctionApp/app/src/main/res/layout/layout_show_all_auction_products.xml" value="0.2341485507246377" />

@@ -4,48 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background2"
+    android:background="@drawable/background"
     tools:context=".MyProducts">
 
-    <RelativeLayout
-        android:id="@+id/ll_appBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/background4"
-        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tv_restAppBar"
-            android:layout_width="wrap_content"
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ll_appBar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DataFlair My Products"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:backgroundTint="#98000000"
 
-        <ImageView
-            android:id="@+id/iv_showOrders"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@id/iv_logout"
-            android:src="@drawable/info" />
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="30dp"
+            android:padding="16dp">
+            <RelativeLayout
 
-        <ImageView
-            android:id="@+id/iv_logout"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="8dp"
-            android:src="@drawable/logout" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btbsymbol"
+                    android:id="@+id/sym"/>
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_restAppBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auction List"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingVertical="15dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/sym"
+                    android:layout_marginHorizontal="30dp"
+                    />
+                    <ImageView
+                        android:id="@+id/iv_showOrders"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_logout"
+                        android:src="@drawable/info" />
+
+                    <ImageView
+                        android:id="@+id/iv_logout"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/logout" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_showAllFood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ll_appBar"
+        android:layout_below="@+id/ll_appBar"
         tools:listitem="@layout/product_layout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
