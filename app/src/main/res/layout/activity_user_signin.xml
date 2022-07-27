@@ -71,7 +71,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginTop="100dp"
-            android:background="@drawable/bg_rounded_input_field"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/white"
