@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@color/background"
+    android:background="@drawable/background"
     app:cardCornerRadius="20dp"
     app:cardElevation="4dp"
     app:cardPreventCornerOverlap="true">
@@ -18,14 +18,16 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:background="#99000000">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_foodImage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/btbsymbol"
                 app:civ_border_width="2dp" />
 
             <LinearLayout
@@ -46,9 +48,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:text="DataFlair"
+                        android:text="Bid That Bro"
                         android:textAlignment="center"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
@@ -61,7 +63,7 @@
                         android:layout_marginRight="12dp"
                         android:text="Phn: 8950562633"
                         android:textAlignment="center"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/white"
                         android:textSize="16sp" />
                 </RelativeLayout>
 
@@ -79,7 +81,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Car"
                         android:textAlignment="center"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/white"
                         android:textSize="28sp"
                         android:textStyle="bold" />
 
@@ -92,7 +94,7 @@
                         android:layout_marginRight="12dp"
                         android:text="Price : $2"
                         android:textAlignment="center"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/white"
                         android:textSize="16sp" />
                 </RelativeLayout>
 
@@ -103,7 +105,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="This is car description for testing purpose"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
             </LinearLayout>
