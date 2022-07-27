@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "385826331962",
+    "project_id": "bidthatbro",
+    "storage_bucket": "bidthatbro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385826331962:android:a69593d7e1c6d64c2ac403",
+        "android_client_info": {
+          "package_name": "com.example.auctionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385826331962-b11t52bg3ntiakv6usioc9e6ig5o6mhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj84Pv5KiMSV-kvDjmX9fJjYozzoPhhII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385826331962-b11t52bg3ntiakv6usioc9e6ig5o6mhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
