@@ -24,7 +24,7 @@
             android:id="@+id/tv_restAppBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Place Bid "
+            android:text="Auction List"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:layout_gravity="center"
@@ -52,7 +52,7 @@
                 android:layout_height="200dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/btbsymbol" />
+                android:src="@drawable/car" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:text="BidThatBro"
+                        android:text="BidThatBto"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="24sp"
@@ -145,49 +145,37 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="40dp"
                         android:layout_marginRight="40dp"
-                        android:hint="Enter your bid Amount"
+                        android:hint="Enter your bid"
                         android:textColor="@color/white"
                         android:textColorHint="@color/white"
                         android:textSize="16sp" />
-                    <androidx.cardview.widget.CardView
+
+                    <Button
+                        android:id="@+id/btn_placeBid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="50dp"
+                        android:layout_margin="20dp"
+                        android:text="Place Bid"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
                         android:backgroundTint="#DDA106"
-                        >
-                        <Button
-                            android:id="@+id/btn_placeBid"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/btn_auctionList"
-                            android:layout_gravity="bottom"
-
-                            android:text="Place Bid"
-                            android:textAllCaps="false"
-                            android:backgroundTint="#DDA106"
-                            android:textColor="@color/white"
-                            android:textSize="16sp"
-                            />
-                    </androidx.cardview.widget.CardView>
-
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
-
-
             <Button
                 android:id="@+id/btn_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_margin="20dp"
-                android:backgroundTint="#DDA106"
 
                 android:text="Call"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:backgroundTint="#DDA106"
                 android:textSize="16sp" />
 
             <Button
@@ -199,7 +187,7 @@
                 android:layout_margin="20dp"
                 android:text="Message"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:backgroundTint="#DDA106"
                 android:textSize="16sp" />
         </RelativeLayout>

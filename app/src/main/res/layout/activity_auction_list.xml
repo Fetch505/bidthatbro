@@ -64,22 +64,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_showAllOrders"
+        android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/auction_Title"
-        android:background="@color/black"
+
         tools:listitem="@layout/layout_show_all_auction_products" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_createFood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/background3"
-        android:src="@drawable/back"
-        app:fabSize="normal"
-        app:tint="@color/white" />
+
 
 </RelativeLayout>

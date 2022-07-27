@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@drawable/background"
+    android:background="@color/background2"
     app:cardCornerRadius="20dp"
     app:cardElevation="4dp"
+    android:backgroundTint="#98000000"
     app:cardPreventCornerOverlap="true">
 
     <LinearLayout
@@ -19,8 +20,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:background="#99000000">
+            >
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_foodImage"
