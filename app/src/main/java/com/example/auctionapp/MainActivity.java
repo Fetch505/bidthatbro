@@ -4,15 +4,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn_myProducts;
     Button btn_auctionList;
     Button btn_winnerList;
-
+    ImageView iv_logout;
     Intent intent;
 
     @Override
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btn_myProducts = findViewById(R.id.btn_myProducts);
         btn_winnerList = findViewById(R.id.btn_winnerList);
         btn_auctionList = findViewById(R.id.btn_auctionList);
-
+        iv_logout = findViewById(R.id.iv_logout);
         intent = getIntent();
         String username = intent.getStringExtra("username");
 
@@ -43,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AuctionList.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK).putExtra("username", username));
+            }
+        });
+        iv_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(MainActivity.this, UserSignin.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                MainActivity.this.finish();
             }
         });
 

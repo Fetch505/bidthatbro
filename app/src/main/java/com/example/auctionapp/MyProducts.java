@@ -92,6 +92,8 @@ public class MyProducts extends AppCompatActivity {
             startActivity(a);
             finish();
         } else {
+            Intent intent = new Intent(MyProducts.this, MainActivity.class);
+            startActivity(intent);
             Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
         }
         pressedTime = System.currentTimeMillis();
