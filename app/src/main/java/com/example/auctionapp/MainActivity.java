@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_myProducts;
     Button btn_auctionList;
     Button btn_winnerList;
-    ImageView iv_logout;
+    Button iv_logout;
     Intent intent;
 
     @Override

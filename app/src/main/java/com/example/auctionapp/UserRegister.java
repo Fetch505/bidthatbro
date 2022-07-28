@@ -105,7 +105,15 @@ public class UserRegister extends AppCompatActivity {
         } else if (!confirmPassword.equals(password)) {
             et_confirmPassword.setError("Password doesn't matches");
             return;
-        } else {
+        }else if (phoneNumber.isEmpty()) {
+            et_phonenumber.setError("Please Enter Phone Number");
+            return;
+        }
+        else if (phoneNumber.length() > 12 ||phoneNumber.length() < 12)  {
+            et_phonenumber.setError("Enter Valid Phone Number");
+            return;
+        }
+        else {
             progressDialog.setMessage("Creating your Account....");
             progressDialog.setTitle("Creating");
             progressDialog.setCanceledOnTouchOutside(false);
